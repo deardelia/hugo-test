@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Data Examination #    Dataset: This use case considers a corpus of 59,989 documents from a historical literary collection: Text Creation Partnership (TCP) transcriptions of the Early English Books Online (EEBO). The data counts the 500 most common English words in each document. For the experiment, we took a random sample of 2500 documents, and held out 30% using stratified sampling.
+  Classifiers: We construct classifiers that determine whether a document is written after 1642 based on the 500 most common words in the corpus.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="(Continuous) Data Examination" />
+<meta property="og:description" content="Data Examination #    Dataset: This use case considers a corpus of 59,989 documents from a historical literary collection: Text Creation Partnership (TCP) transcriptions of the Early English Books Online (EEBO). The data counts the 500 most common English words in each document. For the experiment, we took a random sample of 2500 documents, and held out 30% using stratified sampling.
+  Classifiers: We construct classifiers that determine whether a document is written after 1642 based on the 500 most common words in the corpus." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/docs/use_cases/case8/" /><meta property="article:section" content="docs" />
+
+
+
+<title>(Continuous) Data Examination | My New Hugo Site</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e246e6a45b940b6ff71d8216783f10a80d910290a7c364c8bfd5d305d8545d62.css" integrity="sha256-4kbmpFuUC2/3HYIWeD8QqA2RApCnw2TIv9XTBdhUXWI=">
+<script defer src="/en.search.min.2a2f435221fb9bbbb5f32da04c13848349ead433cdea1e79f659a124646665b1.js" integrity="sha256-Ki9DUiH7m7u18y2gTBOEg0nq1DPN6h559lmhJGRmZbE="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>My New Hugo Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Introduction</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/introduction/overall_introduction/" class="">Overall Introduction</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Publication</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/publication/paper/" class="">Paper</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/publication/video/" class="">Video</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/publication/demo/" class="">Demo</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/user_guide/" class="">User Guide</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/user_guide/get_started/" class="">Get Started</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/user_guide/other_usage/" class="">Views Manipulation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/user_guide/view_description/" class="">Descriptions of Views</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/user_guide/data_preparation/" class="">Data Preparation</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/" class="">Use Case</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case3/" class="">Bias and Data Discovery</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case2/" class="">Fairness Assessment</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case5/" class="">Feature Sensitivity Testing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case6/" class="">Model Selection</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case1/" class="">Model Selection and Data Discovery</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case4/" class="">Model Selection and Tuning</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case7/" class="">(Continuous) Hyper parameter Tuning</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case8/" class=" active">(Continuous) Data Examination</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case9/" class="">(Continuous) Model Selection</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case20/" class="">(Continuous) Model Selection and Detail Examination</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>(Continuous) Data Examination</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#data-examination"><strong>Data Examination</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h3 id="data-examination">
+  <strong>Data Examination</strong>
+  <a class="anchor" href="#data-examination">#</a>
+</h3>
+<ul>
+<li>
+<p>Dataset:  This use case considers a corpus of 59,989 documents from a historical literary collection: Text Creation Partnership (TCP) transcriptions of the Early English Books Online (EEBO). The data
+counts the 500 most common English words in each document. For the experiment, we took a random sample of 2500 documents, and held out 30% using stratified sampling.</p>
+</li>
+<li>
+<p>Classifiers:  We construct classifiers that determine whether a document is written after 1642 based on the 500 most common words in the corpus. We constructed
+random forest (RF) and logistic regression classifiers (LR), with and without applying corrections for class skew.</p>
+</li>
+<li>
+<p>Walkthrough:
+While ground truth is known, effective classifiers can help understand how word usage changed at this critical date that marks the beginning of the English Civil War. The collection is skewed (only 25% of the documents were written before 1642). Therefore, we prefer MCC as a correctness metric.</p>
+<p>Based on <em>Performance Overall</em> view, the random forest classifiers achieve worse performance with the default (.5) threshold on the test set.
+<img src="../../../../../image/cdata-1.png" alt="Example image" /></p>
+<p>Since we prefer to using MCC as correctness metric, we need to set classifiers' thresholds based on their MCC values. Using the <em>Bandwidth Assessment</em> view we can choose the threshold that optimizes MCC for each classifier.
+<img src="../../../../../image/cdata-2.png" alt="Example image" /></p>
+<p>Based on our findings in <em>Bandwidth Assessment</em> view, we set all classifiers' thresholds as .7 (the following graph shows the how MCC changes with threhsold of classifier rf).
+<img src="../../../../../image/cdata-3.png" alt="Example image" /></p>
+<p>Now, we can tell that after choosing the threshold that achieves the highest MCC for each classifier, the RF classifiers have the best performance across metrics.
+<img src="../../../../../image/cdata-4.png" alt="Example image" /></p>
+<p>However, this optimized performance may be specific to the test set. To provide a check against overfitting, we use CBoxer’s bootstrap sampling feature to create 10 new testing sets from the original (the following graph shows how to use <em>Instance Sampling</em> panel to create samples) and see that the results do not change. While the precise
+values of threshold and metrics may change, in all cases, RF beats LR.
+<img src="../../../../../image/cdata-5.png" alt="Example image" /></p>
+<p>A question is whether performance near the boundary is different than documents written farther from the critical date. We can
+select the time periods before and after the critical date by using <em>Histogram</em> view
+<img src="../../../../../image/cdata-6.png" alt="Example image" /></p>
+<p>Then under the &lsquo;original distribution&rsquo; mode of the <em>Performance Confidence</em> view, we can see that
+the scores are generally closer to the
+threshold. Both before and after the boundary seem to
+be problematic which suggests that language was in flux before the
+English civil war.
+<img src="../../../../../image/cdata-7.png" alt="Example image" /></p>
+<p>Another question is whether the length of documents has any connection to the certainty of a prediction. Using a Histogram view,
+Let&rsquo;s select the shortest and longest documents:
+<img src="../../../../../image/cdata-8.png" alt="Example image" /></p>
+<p>Then we can view the distribution over <em>Performance Confidence</em> view.</p>
+<p>We can see
+that long documents are disproportionately given confident scores,
+while the shortest documents (less than 150 words) score in the
+center (less confident predictions).</p>
+</li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#data-examination"><strong>Data Examination</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

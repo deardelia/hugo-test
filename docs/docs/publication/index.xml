@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publication on My New Hugo Site</title>
+    <link>http://example.org/docs/publication/</link>
+    <description>Recent content in Publication on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/docs/publication/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Paper</title>
+      <link>http://example.org/docs/publication/paper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/publication/paper/</guid>
+      <description>Paper #  To cite boxer:
+ Michael Gleicher, Aditya Barve, Xinyu Yu, and Florian Heimerl. Boxer: Interactive Comparison of Classifier Results. Computer Graphics Forum 39 (3), June 2020. DOI:10.1111/cgf.13972
+ Official journal web page (the paper is open access!): https://diglib.eg.org/handle/10.1111/cgf13972</description>
+    </item>
+    
+    <item>
+      <title>Video</title>
+      <link>http://example.org/docs/publication/video/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/publication/video/</guid>
+      <description>Boxer Videos #  Boxer (Submission) Video #  Continuous Boxer Video #  to be updated&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Demo</title>
+      <link>http://example.org/docs/publication/demo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/publication/demo/</guid>
+      <description>Demo #  Demo website #  Click hereto open the online demo in a new browser tab.
+Public Datasets #     Dataset Name Description Related Use case     Imputation The Mushroom dataset that considers a testing set of 2,000 (of 8,124) randomly selected instances. Model Selection   IMDB Confidence The data consists of 5044 movies with 27 features, however, 25% is sequestered for final assessment.</description>
+    </item>
+    
+  </channel>
+</rss>

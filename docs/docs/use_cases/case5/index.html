@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Feature Sensitivity Testing #    Dataset: The data set is a collection of 554 plays written in the Early Modern Period (1470-1660). Five linguistic features are used. We classify plays with one of four genres (Comedy, History, Tragedy and Tragicomedy).
+  Classifiers: Our experiment uses a Support Vector Machine (SVM) classifier trained with class weights to counteract a skewed training distribution. A stratified sample of 20% was removed as the test set.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Feature Sensitivity Testing" />
+<meta property="og:description" content="Feature Sensitivity Testing #    Dataset: The data set is a collection of 554 plays written in the Early Modern Period (1470-1660). Five linguistic features are used. We classify plays with one of four genres (Comedy, History, Tragedy and Tragicomedy).
+  Classifiers: Our experiment uses a Support Vector Machine (SVM) classifier trained with class weights to counteract a skewed training distribution. A stratified sample of 20% was removed as the test set." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/docs/use_cases/case5/" /><meta property="article:section" content="docs" />
+
+
+
+<title>Feature Sensitivity Testing | My New Hugo Site</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e246e6a45b940b6ff71d8216783f10a80d910290a7c364c8bfd5d305d8545d62.css" integrity="sha256-4kbmpFuUC2/3HYIWeD8QqA2RApCnw2TIv9XTBdhUXWI=">
+<script defer src="/en.search.min.2a2f435221fb9bbbb5f32da04c13848349ead433cdea1e79f659a124646665b1.js" integrity="sha256-Ki9DUiH7m7u18y2gTBOEg0nq1DPN6h559lmhJGRmZbE="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>My New Hugo Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Introduction</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/introduction/overall_introduction/" class="">Overall Introduction</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Publication</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/publication/paper/" class="">Paper</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/publication/video/" class="">Video</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/publication/demo/" class="">Demo</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/user_guide/" class="">User Guide</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/user_guide/get_started/" class="">Get Started</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/user_guide/other_usage/" class="">Views Manipulation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/user_guide/view_description/" class="">Descriptions of Views</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/user_guide/data_preparation/" class="">Data Preparation</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/" class="">Use Case</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case3/" class="">Bias and Data Discovery</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case2/" class="">Fairness Assessment</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case5/" class=" active">Feature Sensitivity Testing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case6/" class="">Model Selection</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case1/" class="">Model Selection and Data Discovery</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case4/" class="">Model Selection and Tuning</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case7/" class="">(Continuous) Hyper parameter Tuning</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case8/" class="">(Continuous) Data Examination</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case9/" class="">(Continuous) Model Selection</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case20/" class="">(Continuous) Model Selection and Detail Examination</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Feature Sensitivity Testing</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#feature-sensitivity-testing"><strong>Feature Sensitivity Testing</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h3 id="feature-sensitivity-testing">
+  <strong>Feature Sensitivity Testing</strong>
+  <a class="anchor" href="#feature-sensitivity-testing">#</a>
+</h3>
+<ul>
+<li>
+<p>Dataset: The data set is a collection of 554 plays written in the Early Modern Period (1470-1660). Five linguistic features are used. We classify plays with one of four genres (Comedy, History, Tragedy and Tragicomedy).</p>
+</li>
+<li>
+<p>Classifiers: Our experiment uses a Support Vector Machine (SVM) classifier trained with class weights to counteract a skewed training distribution. A stratified sample of 20% was removed as the test set. The training set has very few of the underrepresented classes</p>
+</li>
+<li>
+<p>Walkthrough:</p>
+<p>First, click the button on the top left and load the dataset.
+<img src="../../../../../image/play-1.png" alt="Example image" /></p>
+<p>After model training, a feature sensitivity experiment identifies which features contribute to the classifier’s performance. We create a variant of the data set for each feature. In each data variant, small perturbations (positive and negative) are added to its corresponding
+feature’s value for all entries in the data set. The resulting data sets have twice as many items as the original (one for positive additions to the feature, one for negative ones). Each data variant is run through the classifier. Here, we consider only the testing set.
+<img src="../../../../../image/play-2.png" alt="Example image" /></p>
+<p>Such experiments are preferred to simply examine model coefficients because they test the effects of the variables near the actual data.
+Let&rsquo;s first use <em>Standard Metrics</em> view to compare the performance of each classifier:
+<img src="../../../../../image/play-3.png" alt="Example image" />
+The experiment results show that for feature Negativity (N), the classifier performs much worse than the baseline (accuracy and Mathews correlation).
+What&rsquo;s more, two features PersonProperty (PP) and DirectAddress (DA) achieve similar performance to the baseline.</p>
+<p>Standard procedure would conclude that the classifier is sensitive to N but not PP and DA. However, closer examination in Boxer reveals otherwise.
+The <em>Classifier Performance</em> view shows that PP and DA have similar accuracy to the baseline:
+<img src="../../../../../image/play-4.png" alt="Example image" /></p>
+<p>Then, let&rsquo;s select the correct and incorrect subsets for the baseline and it allows us to compare with the perturbed results ((left click on the lower box, cyan selection; right click on the upper box, magenta selection):
+<img src="../../../../../image/play-5.png" alt="data of interest" /></p>
+<p>To further analyze the performance of classifiers based on selection, we can use <em>Selection Performance</em> view:
+<img src="../../../../../image/play-7.png" alt="Example image" />
+For DA, the overlaps are substantial, for PP there is less overlap. While PP gets the same number of instances correct, it is correct on different ones, suggesting the model is sensitive to this feature.</p>
+</li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#feature-sensitivity-testing"><strong>Feature Sensitivity Testing</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

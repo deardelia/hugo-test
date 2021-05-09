@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Model Selection and Tuning #    Dataset: The data consists of 5044 movies with 27 features, however, 25% is sequestered for final assessment. A stratified sampling of 200 movies per class is held out from the 3756 for testing.
+  Classifiers: We develop a classifier to predict movie ratings from IMDB. Classifiers predict a movie’s rating (low, medium, high). A variety of classifiers were constructed such as linear regression(lr), k- neural network(knn), support vector machines(svm), neural network(nn), random forest(rf) and linear discriminant analysis(lda), none with acceptable accuracy.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Model Selection and Tuning" />
+<meta property="og:description" content="Model Selection and Tuning #    Dataset: The data consists of 5044 movies with 27 features, however, 25% is sequestered for final assessment. A stratified sampling of 200 movies per class is held out from the 3756 for testing.
+  Classifiers: We develop a classifier to predict movie ratings from IMDB. Classifiers predict a movie’s rating (low, medium, high). A variety of classifiers were constructed such as linear regression(lr), k- neural network(knn), support vector machines(svm), neural network(nn), random forest(rf) and linear discriminant analysis(lda), none with acceptable accuracy." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/docs/use_cases/case4/" /><meta property="article:section" content="docs" />
+
+
+
+<title>Model Selection and Tuning | My New Hugo Site</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e246e6a45b940b6ff71d8216783f10a80d910290a7c364c8bfd5d305d8545d62.css" integrity="sha256-4kbmpFuUC2/3HYIWeD8QqA2RApCnw2TIv9XTBdhUXWI=">
+<script defer src="/en.search.min.2a2f435221fb9bbbb5f32da04c13848349ead433cdea1e79f659a124646665b1.js" integrity="sha256-Ki9DUiH7m7u18y2gTBOEg0nq1DPN6h559lmhJGRmZbE="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>My New Hugo Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Introduction</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/introduction/overall_introduction/" class="">Overall Introduction</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Publication</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/publication/paper/" class="">Paper</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/publication/video/" class="">Video</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/publication/demo/" class="">Demo</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/user_guide/" class="">User Guide</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/user_guide/get_started/" class="">Get Started</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/user_guide/other_usage/" class="">Views Manipulation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/user_guide/view_description/" class="">Descriptions of Views</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/user_guide/data_preparation/" class="">Data Preparation</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/" class="">Use Case</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case3/" class="">Bias and Data Discovery</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case2/" class="">Fairness Assessment</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case5/" class="">Feature Sensitivity Testing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case6/" class="">Model Selection</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case1/" class="">Model Selection and Data Discovery</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case4/" class=" active">Model Selection and Tuning</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case7/" class="">(Continuous) Hyper parameter Tuning</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case8/" class="">(Continuous) Data Examination</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case9/" class="">(Continuous) Model Selection</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case20/" class="">(Continuous) Model Selection and Detail Examination</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Model Selection and Tuning</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#model-selection-and-tuning"><strong>Model Selection and Tuning</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h3 id="model-selection-and-tuning">
+  <strong>Model Selection and Tuning</strong>
+  <a class="anchor" href="#model-selection-and-tuning">#</a>
+</h3>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Dataset: The data consists of 5044 movies with 27 features, however, 25% is sequestered for final assessment. A stratified sampling of 200 movies per class is held out from the 3756 for testing.</p>
+</li>
+<li>
+<p>Classifiers: We develop a classifier to predict movie ratings from IMDB. Classifiers predict a movie’s rating (low, medium, high). A variety of classifiers were constructed such as linear regression(lr), k- neural network(knn), support vector machines(svm), neural network(nn), random forest(rf) and linear discriminant analysis(lda), none with acceptable accuracy.</p>
+</li>
+<li>
+<p>Walkthrough:</p>
+<p>First, click the button on the top left and load the dataset.
+<img src="../../../../../image/movie-1.png" alt="Example image" /></p>
+<p>Since classifier &ldquo;svm-b&rdquo; is the classifier after tuning and classifier is the classifier which is not necessary for this use case, let&rsquo;s first exclude these two classifiers via the selection panel on the right:
+<img src="../../../../../image/movie-2.png" alt="Example image" /></p>
+<p>In addition, we should make sure we are using the &ldquo;testing&rdquo; dataset:
+<img src="../../../../../image/movie-3.png" alt="Example image" /></p>
+<p>Then, let&rsquo;s use the <em>Classifier Performance</em> view to see the performance of each classifiers:
+<img src="../../../../../image/movie-4.png" alt="Example image" />
+This view confirms the poor performance of classifers.</p>
+<p>In order to get more detailed information on those challenging instances, we can apply <em>Cumulative Accuracy</em> view:
+<img src="../../../../../image/movie-5.png" alt="Example image" />
+The <em>Cumulative Accuracy</em> view shows large numbers of instances that are easy and hard (all or no classifiers are correct).</p>
+<p>Let&rsquo;s select these easy (left click for cyan) and hard subsets (right click for magenta).
+<img src="../../../../../image/movie-6.png" alt="Example image" /></p>
+<p>Open <em>Histogram</em> view of class distribution:
+<img src="../../../../../image/movie-7.png" alt="Example image" />
+In a Histogram view, we can see the hard elements are in the high class, suggesting a skewed training set as shown above.</p>
+<p>Now, let&rsquo;s switch our dataset from &ldquo;testing&rdquo; to &ldquo;training&rdquo;:
+<img src="../../../../../image/movie-8.png" alt="Example image" /></p>
+<p>Back to the <em>Histogram</em> view of class distribution, we can find that this class distribution confirms the skewed nature:
+<img src="../../../../../image/movie-9.png" alt="Example image" /></p>
+<p>Therefore, a new classifier called &ldquo;svm_w&rdquo; was built that accounts for this skew (now we should include the &ldquo;svm_w&rdquo; classifier in the following analysis).
+Let&rsquo;s look at the performance of &ldquo;svm_w&rdquo; classifier on &ldquo;testing&rdquo; dataset.
+<img src="../../../../../image/movie-10.png" alt="Example image" /></p>
+<p>We can then left-click the misclassified instances of &ldquo;svm_w&rdquo; in <em>Classifier Performance</em> view and keep the magenta selection being the same as the previous one. The below Histogram view shows that the new classifier has superior performance, although its errors are still biased.
+<img src="../../../../../image/movie-11.png" alt="Example image" /></p>
+<p>In conclusion, while conventional tools can show skew, the example shows how Boxer’s flexible mechanisms allow performance effects to be connected to data issues.</p>
+</li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#model-selection-and-tuning"><strong>Model Selection and Tuning</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
