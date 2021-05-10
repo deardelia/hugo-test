@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Hyper parameter Tuning #    Dataset: The scenario uses wine quality benchmark from UCI Machine Learnng Repository, which requires classifying the quality of a wine from its properties.
+  Classifiers: Because we are trying to determine a hyper-parameter, we perform this analysis using the training data. We build a random forest classifier, and find that it gives good performance over a range of thresholds. We want to understand if changes in the threshold affect the outcomes">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="(Continuous) Hyper parameter Tuning" />
+<meta property="og:description" content="Hyper parameter Tuning #    Dataset: The scenario uses wine quality benchmark from UCI Machine Learnng Repository, which requires classifying the quality of a wine from its properties.
+  Classifiers: Because we are trying to determine a hyper-parameter, we perform this analysis using the training data. We build a random forest classifier, and find that it gives good performance over a range of thresholds. We want to understand if changes in the threshold affect the outcomes" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/docs/use_cases/case7/" /><meta property="article:section" content="docs" />
+
+
+
+<title>(Continuous) Hyper parameter Tuning | My New Hugo Site</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e246e6a45b940b6ff71d8216783f10a80d910290a7c364c8bfd5d305d8545d62.css" integrity="sha256-4kbmpFuUC2/3HYIWeD8QqA2RApCnw2TIv9XTBdhUXWI=">
+<script defer src="/en.search.min.2a2f435221fb9bbbb5f32da04c13848349ead433cdea1e79f659a124646665b1.js" integrity="sha256-Ki9DUiH7m7u18y2gTBOEg0nq1DPN6h559lmhJGRmZbE="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>My New Hugo Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Introduction</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/introduction/overall_introduction/" class="">Overall Introduction</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Publication</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/publication/paper/" class="">Paper</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/publication/video/" class="">Video</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/publication/demo/" class="">Demo</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/user_guide/" class="">User Guide</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/user_guide/get_started/" class="">Get Started</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/user_guide/other_usage/" class="">Views Manipulation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/user_guide/view_description/" class="">Descriptions of Views</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/user_guide/data_preparation/" class="">Data Preparation</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/" class="">Use Case</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case3/" class="">Bias and Data Discovery</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case2/" class="">Fairness Assessment</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case5/" class="">Feature Sensitivity Testing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case6/" class="">Model Selection</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case1/" class="">Model Selection and Data Discovery</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case4/" class="">Model Selection and Tuning</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case7/" class=" active">(Continuous) Hyper parameter Tuning</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case8/" class="">(Continuous) Data Examination</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case9/" class="">(Continuous) Model Selection</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case20/" class="">(Continuous) Model Selection and Detail Examination</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>(Continuous) Hyper parameter Tuning</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#hyper-parameter-tuning"><strong>Hyper parameter Tuning</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h3 id="hyper-parameter-tuning">
+  <strong>Hyper parameter Tuning</strong>
+  <a class="anchor" href="#hyper-parameter-tuning">#</a>
+</h3>
+<ul>
+<li>
+<p>Dataset: The scenario uses wine quality benchmark from UCI Machine Learnng Repository, which requires classifying the quality of a wine from its properties.</p>
+</li>
+<li>
+<p>Classifiers: Because we are trying to determine a hyper-parameter, we perform this analysis using the training data. We build a random forest
+classifier, and find that it gives good performance over a range of
+thresholds. We want to understand if changes in the threshold affect
+the outcomes</p>
+</li>
+<li>
+<p>Walkthrough:</p>
+<p>After loading the data, let&rsquo;s first open the <em>Bandwidth Assessment</em> view.
+<img src="../../../../../image/wine-1.png" alt="Example image" /></p>
+<p>We see that the accuracy is constant for thresholds around .5. Then we use the <em>Probability Control panel</em> to adjust the threshold.
+<img src="../../../../../image/wine-2.png" alt="Example image" /></p>
+<p>For several values in the range, we create new classifiers that use the same model with different
+thresholds (.5, .55, .6, .65) and compare these models.
+<img src="../../../../../image/wine-3.png" alt="Example image" /></p>
+<p>We see that accuracy, F1 and MCC scores are very similar across the four.
+<img src="../../../../../image/wine-4.png" alt="Example image" /></p>
+<p>However, if we select the errors (left click to select the errors when threshold is .5, and right click to select the errors when threshold is .6), we see that they are different:
+<img src="../../../../../image/wine-5.png" alt="Example image" /></p>
+<p>For the lower thresholds, there are more false negatives, while for the higher thresholds more false positives. <em>Trinary Instance Distribution</em> view also shows this.
+<img src="../../../../../image/wine-6.png" alt="Example image" /></p>
+<p>In conclusion, this classifier is quite sensitive to small changes in the threshold, even though those changes do not affect the most common metrics.</p>
+</li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#hyper-parameter-tuning"><strong>Hyper parameter Tuning</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
