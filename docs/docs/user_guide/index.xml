@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>User Guide on My New Hugo Site</title>
-    <link>http://example.org/docs/user_guide/</link>
-    <description>Recent content in User Guide on My New Hugo Site</description>
+    <title>User Guide on Boxer</title>
+    <link>/docs/user_guide/</link>
+    <description>Recent content in User Guide on Boxer</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/docs/user_guide/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/docs/user_guide/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Get Started</title>
-      <link>http://example.org/docs/user_guide/get_started/</link>
+      <link>/docs/user_guide/get_started/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/user_guide/get_started/</guid>
+      <guid>/docs/user_guide/get_started/</guid>
       <description>Get started #  The tutorial will introduce the ways of comparing classfiers&#39; performance. It will guide you to load data, choose views and analyze visualizations.
 1. Load dataset
 Click the &amp;lsquo;+&amp;rsquo; at top left to choose the dataset (we use the &amp;lsquo;wine_quality&amp;rsquo; dataset for this tutorial).
@@ -21,30 +21,30 @@ There are multiple ways to compare the accuracy of each classifier. We can direc
     
     <item>
       <title>Views Manipulation</title>
-      <link>http://example.org/docs/user_guide/other_usage/</link>
+      <link>/docs/user_guide/other_usage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/user_guide/other_usage/</guid>
+      <guid>/docs/user_guide/other_usage/</guid>
       <description>Additional guide for views manipulation #  This tutorial will walk through some basic usages of Boxer system, like how to make views, save / reload views configuration.
 Make views #  Save and reload configuration #  Clicking the &amp;ldquo;Save Views&amp;rdquo; button enables us to save the configurations of current views. After clicing the button, a &amp;ldquo;views_config.json&amp;rdquo; file will be created and it contains the important configurations of all views, including the view&amp;rsquo;s mode, the selected options in each view, the thresholds of classifiers, etc.</description>
     </item>
     
     <item>
       <title>Descriptions of Views</title>
-      <link>http://example.org/docs/user_guide/view_description/</link>
+      <link>/docs/user_guide/view_description/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/user_guide/view_description/</guid>
+      <guid>/docs/user_guide/view_description/</guid>
       <description>Description of views #  Overview of Boxer Views #  Boxer features a number of different views that provide often needed arrangements of boxes useful in performing classifier comparison. This part will provide you with an overview of the views in Boxer. You will learn the basic uses of each view.
 To add a view to the workspace, use the Views dropdown in the right panel of Boxer&amp;rsquo;s window. It is below the &amp;ldquo;filters&amp;rdquo; panel.</description>
     </item>
     
     <item>
       <title>Data Preparation</title>
-      <link>http://example.org/docs/user_guide/data_preparation/</link>
+      <link>/docs/user_guide/data_preparation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/user_guide/data_preparation/</guid>
+      <guid>/docs/user_guide/data_preparation/</guid>
       <description>Instructions to prepare your own data for Boxer #  CORS #  In order to successfully load your dataset, you need to first add an extension called CORS (Access-Control-Allow-Origin lets you easily perform cross-domain Ajax requests in web applications) to Chrome. Everytime you want to use your own dataset, please remember to enable &amp;lsquo;CORS&amp;rsquo;. Data Set Composition #  The data set used for Boxer consists of 3 files:</description>
     </item>
     

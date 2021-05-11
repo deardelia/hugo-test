@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Introduction on My New Hugo Site</title>
-    <link>http://example.org/docs/introduction/</link>
-    <description>Recent content in Introduction on My New Hugo Site</description>
+    <title>Introduction on Boxer</title>
+    <link>/docs/introduction/</link>
+    <description>Recent content in Introduction on Boxer</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/docs/introduction/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/docs/introduction/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Overall Introduction</title>
-      <link>http://example.org/docs/introduction/overall_introduction/</link>
+      <link>/docs/introduction/overall_introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/introduction/overall_introduction/</guid>
+      <guid>/docs/introduction/overall_introduction/</guid>
       <description>Overall Introduction #  Boxer #  Motivation #  Machine learning practitioners often perform experiments that compare classification results. Users gather the results of different classifiers and/or data perturbations on a collection of testing examples. Results data are stored and analyzed for tasks such as model selection, hyper-parameter tuning, data quality assessment, fairness testing, and gaining insight about the underlying data. Classifier comparison experiments are typically evaluated by summary statistics of model performance, such as accuracy, F1, and related metrics.</description>
     </item>
     
