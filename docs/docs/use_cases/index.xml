@@ -2,96 +2,96 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Use Case on Boxer</title>
-    <link>/docs/use_cases/</link>
+    <link>https://example.org/docs/use_cases/</link>
     <description>Recent content in Use Case on Boxer</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/docs/use_cases/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://example.org/docs/use_cases/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bias and Data Discovery</title>
-      <link>/docs/use_cases/case3/</link>
+      <link>https://example.org/docs/use_cases/case3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/use_cases/case3/</guid>
+      <guid>https://example.org/docs/use_cases/case3/</guid>
       <description>Bias and Data Discovery #    Dataset: The dataset for this use case is still the TCP collection of historical documents. This use case took a random sample of 12,000 documents, and held out 30% using stratified sampling. While the testing set is balanced (1,800 per class), the training set is highly skewed (only 15% before 1642).
   Classifiers: The classifiers have been constructed to determine whether a document is written after 1642 based on the 500 most common words in the corpus.</description>
     </item>
     
     <item>
       <title>Fairness Assessment</title>
-      <link>/docs/use_cases/case2/</link>
+      <link>https://example.org/docs/use_cases/case2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/use_cases/case2/</guid>
+      <guid>https://example.org/docs/use_cases/case2/</guid>
       <description>Fairness Assessment #    Dataset: We consider a standard test case for fair learning: the Broward County recidivism dataset, popularized by ProPublica. The data set contains 6,172 instances and 14 numeric features (created by one-hot encoding the categorical features in the initial seven feature data set). 20% are held for testing.
   Classifiers: The task is to predict whether a person will commit a crime within two years (two-year recidivism).</description>
     </item>
     
     <item>
       <title>Feature Sensitivity Testing</title>
-      <link>/docs/use_cases/case5/</link>
+      <link>https://example.org/docs/use_cases/case5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/use_cases/case5/</guid>
+      <guid>https://example.org/docs/use_cases/case5/</guid>
       <description>Feature Sensitivity Testing #    Dataset: The data set is a collection of 554 plays written in the Early Modern Period (1470-1660). Five linguistic features are used. We classify plays with one of four genres (Comedy, History, Tragedy and Tragicomedy).
   Classifiers: Our experiment uses a Support Vector Machine (SVM) classifier trained with class weights to counteract a skewed training distribution. A stratified sample of 20% was removed as the test set.</description>
     </item>
     
     <item>
       <title>Model Selection</title>
-      <link>/docs/use_cases/case6/</link>
+      <link>https://example.org/docs/use_cases/case6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/use_cases/case6/</guid>
+      <guid>https://example.org/docs/use_cases/case6/</guid>
       <description>Model Selection #    Dataset: This use case uses Mushroom dataset and considers a testing set of 2,000 (of 8,124) randomly selected instances.
   Classifiers: We consider adapting a classifier to identify poisonous mushrooms. The initial training of the baseline classifier uses the color feature, but we built a new classifier that does not use this feature. We consider two approaches to imputing the missing color feature by using the mode of the data and training a decision tree to classify the color based on other features.</description>
     </item>
     
     <item>
       <title>Model Selection and Data Discovery</title>
-      <link>/docs/use_cases/case1/</link>
+      <link>https://example.org/docs/use_cases/case1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/use_cases/case1/</guid>
+      <guid>https://example.org/docs/use_cases/case1/</guid>
       <description>Model Selection and Data Discovery #    Dataset: This use case considers a corpus of 59,989 documents from a historical literary collection and the data counts the 500 most common English words in each document.
   Classifiers: The classifiers for this task are decision tree classifiers using a variety of univariate feature selection strategies, each selecting 10 words to count for features. The feature selection methods were: most relevant by a CHI-squared univariate feature selector (C), most common features (N), randomly chosen features (R), and, as a baseline, the features deemed worst (out of the 500 candidate words) by the CHI-squared test (W).</description>
     </item>
     
     <item>
       <title>Model Selection and Tuning</title>
-      <link>/docs/use_cases/case4/</link>
+      <link>https://example.org/docs/use_cases/case4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/use_cases/case4/</guid>
+      <guid>https://example.org/docs/use_cases/case4/</guid>
       <description>Model Selection and Tuning #    Dataset: The data consists of 5044 movies with 27 features, however, 25% is sequestered for final assessment. A stratified sampling of 200 movies per class is held out from the 3756 for testing.
   Classifiers: We develop a classifier to predict movie ratings from IMDB. Classifiers predict a movie’s rating (low, medium, high). A variety of classifiers were constructed such as linear regression(lr), k- neural network(knn), support vector machines(svm), neural network(nn), random forest(rf) and linear discriminant analysis(lda), none with acceptable accuracy.</description>
     </item>
     
     <item>
       <title>(Continuous) Hyper parameter Tuning</title>
-      <link>/docs/use_cases/case7/</link>
+      <link>https://example.org/docs/use_cases/case7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/use_cases/case7/</guid>
+      <guid>https://example.org/docs/use_cases/case7/</guid>
       <description>Hyper parameter Tuning #    Dataset: The scenario uses wine quality benchmark from UCI Machine Learnng Repository, which requires classifying the quality of a wine from its properties.
   Classifiers: Because we are trying to determine a hyper-parameter, we perform this analysis using the training data. We build a random forest classifier, and find that it gives good performance over a range of thresholds. We want to understand if changes in the threshold affect the outcomes</description>
     </item>
     
     <item>
       <title>(Continuous) Data Examination</title>
-      <link>/docs/use_cases/case8/</link>
+      <link>https://example.org/docs/use_cases/case8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/use_cases/case8/</guid>
+      <guid>https://example.org/docs/use_cases/case8/</guid>
       <description>Data Examination #    Dataset: This use case considers a corpus of 59,989 documents from a historical literary collection: Text Creation Partnership (TCP) transcriptions of the Early English Books Online (EEBO). The data counts the 500 most common English words in each document. For the experiment, we took a random sample of 2500 documents, and held out 30% using stratified sampling.
   Classifiers: We construct classifiers that determine whether a document is written after 1642 based on the 500 most common words in the corpus.</description>
     </item>
     
     <item>
       <title>(Continuous) Model Selection</title>
-      <link>/docs/use_cases/case9/</link>
+      <link>https://example.org/docs/use_cases/case9/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/use_cases/case9/</guid>
+      <guid>https://example.org/docs/use_cases/case9/</guid>
       <description>Data Examination #    Dataset: The scenario uses the income classification benchmark dataset from that has been downsampled.
   Classifiers: Classifiers determine whether an individual’s income is above a certain level. Three models were constructed with different methods: multi-layer perceptron (MLP), logistic regression (LR), and Na¨ıve Bayes (NB).
   Walkthrough: From Performance Overall view, the 3 models provide very similar correctness summary scores (F1 is .783, identical to 3 decimal places) over a test set of 1500 items.</description>
@@ -99,10 +99,10 @@
     
     <item>
       <title>(Continuous) Model Selection and Detail Examination</title>
-      <link>/docs/use_cases/case20/</link>
+      <link>https://example.org/docs/use_cases/case20/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/use_cases/case20/</guid>
+      <guid>https://example.org/docs/use_cases/case20/</guid>
       <description>Model Selection and Detail Examinationt #  This use case shows how our approach can help with model selection and threshold tuning. A classifier was built for the CIFAR 100 computer vision benchmark using Tensorflow.
   Dataset: In this example, we have a dataset of various flower images. The dataset has 100 classes. Our goal is to create a binary classifier for a “meta-class” which combines 5 of the main classes.</description>
     </item>
