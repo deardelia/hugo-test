@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Get started #  The tutorial will introduce the ways of comparing classfiers&#39; performance. It will guide you to load data, choose views and analyze visualizations.
+1. Load dataset
+Click the &lsquo;&#43;&rsquo; at top left to choose the dataset (we use the &lsquo;wine_quality&rsquo; dataset for this tutorial).
+2. Compare classifiers based on overall performance
+There are multiple ways to compare the accuracy of each classifier. We can directly use Classifier Performance View, where each bar is composed of the correctly classified instances (represented by the blue bar at the bottom) and misclassified instances (represented by the orange bar on top).">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Get Started" />
+<meta property="og:description" content="Get started #  The tutorial will introduce the ways of comparing classfiers&#39; performance. It will guide you to load data, choose views and analyze visualizations.
+1. Load dataset
+Click the &lsquo;&#43;&rsquo; at top left to choose the dataset (we use the &lsquo;wine_quality&rsquo; dataset for this tutorial).
+2. Compare classifiers based on overall performance
+There are multiple ways to compare the accuracy of each classifier. We can directly use Classifier Performance View, where each bar is composed of the correctly classified instances (represented by the blue bar at the bottom) and misclassified instances (represented by the orange bar on top)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/docs/user_guide/get_started/" /><meta property="article:section" content="docs" />
+
+
+
+<title>Get Started | My New Hugo Site</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e246e6a45b940b6ff71d8216783f10a80d910290a7c364c8bfd5d305d8545d62.css" integrity="sha256-4kbmpFuUC2/3HYIWeD8QqA2RApCnw2TIv9XTBdhUXWI=">
+<script defer src="/en.search.min.2a2f435221fb9bbbb5f32da04c13848349ead433cdea1e79f659a124646665b1.js" integrity="sha256-Ki9DUiH7m7u18y2gTBOEg0nq1DPN6h559lmhJGRmZbE="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>My New Hugo Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Introduction</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/introduction/overall_introduction/" class="">Overall Introduction</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Publication</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/publication/paper/" class="">Paper</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/publication/video/" class="">Video</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/publication/demo/" class="">Demo</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/user_guide/" class="">User Guide</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/user_guide/get_started/" class=" active">Get Started</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/user_guide/other_usage/" class="">Views Manipulation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/user_guide/view_description/" class="">Descriptions of Views</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/user_guide/data_preparation/" class="">Data Preparation</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/" class="">Use Case</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case3/" class="">Bias and Data Discovery</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case2/" class="">Fairness Assessment</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case5/" class="">Feature Sensitivity Testing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case6/" class="">Model Selection</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case1/" class="">Model Selection and Data Discovery</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case4/" class="">Model Selection and Tuning</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case7/" class="">(Continuous) Hyper parameter Tuning</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case8/" class="">(Continuous) Data Examination</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case9/" class="">(Continuous) Model Selection</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/use_cases/case20/" class="">(Continuous) Model Selection and Detail Examination</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Get Started</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents"></nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="get-started">
+  Get started
+  <a class="anchor" href="#get-started">#</a>
+</h1>
+<p>The tutorial will introduce the ways of comparing classfiers' performance. It will guide you to load data, choose views and analyze visualizations.</p>
+<p><strong>1. Load dataset</strong></p>
+<p>Click the &lsquo;+&rsquo; at top left to choose the dataset (we use the &lsquo;wine_quality&rsquo; dataset for this tutorial).</p>
+<p><img src="../../../image/guide-2.png" alt="Example image" /></p>
+<p><strong>2. Compare classifiers based on overall performance</strong></p>
+<p>There are multiple ways to compare the accuracy of each classifier. We can directly use <em>Classifier Performance View</em>, where each bar is composed of the correctly classified instances (represented by the blue bar at the bottom) and misclassified instances (represented by the orange bar on top). To get the exact value of accuracy, we can hover on each bar, then the fraction of correctly classified and misclassified instances will show up.
+<img src="../../../image/guide-3.png" alt="Example image" /></p>
+<p>We can also use other views to get such information. In order to choose other views, we could expand the &lsquo;Views&rsquo; panel in the left.
+<img src="../../../image/guide-4.png" alt="Example image" /></p>
+<p>For accuracy comparison, we can also use <em>Standard Metrics view</em> and <em>Parallel Metrics view</em>.
+<img src="../../../image/guide-5.png" alt="Example image" /></p>
+<p>Apart from accuracy, we can also comapre classifiers based on other metrics, including <em>precision, recall, f1, mcc</em>. For example, we can expand the panel of <em>Classifier Performance View</em> to choose the metrics we want.
+<img src="../../../image/guide-6.png" alt="Example image" /></p>
+<p><strong>3. Compare classifiers based on selected subset</strong></p>
+<p>Now we already have a sense the overall performance of each classifier under the entire dataset, and we might want to focus on the comparisons based on the selected subset. Supposed that we are interested in the performance of each classifier in the &lsquo;red wine&rsquo; instances.</p>
+<p>First, we can create the subset by using the <em>Histogram view</em>. Let&rsquo;s expand the panel and choose &lsquo;type&rsquo; in the dropdown menu of &lsquo;Categorial&rsquo;. Then click the bar of &lsquo;red&rsquo; to make the selection.
+<img src="../../../image/guide-7.png" alt="Example image" />.</p>
+<p>Now the selected instances can be showed in all the bars of the system. To directly compare the performance of classifiers under the selected subset, we could use &lsquo;Selection Performance view&rsquo; where displays the accuracy (we can also choose other metrics by expanding the panel of the view) of each classifier based on the selected instances.
+<img src="../../../image/guide-8.png" alt="Example image" />.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents"></nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

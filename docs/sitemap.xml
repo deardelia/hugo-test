@@ -2,56 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/docs/use_cases/case3/</loc>
+    <loc>/docs/use_cases/case3/</loc>
   </url><url>
-    <loc>http://example.org/docs/use_cases/case2/</loc>
+    <loc>/docs/use_cases/case2/</loc>
   </url><url>
-    <loc>http://example.org/docs/use_cases/case5/</loc>
+    <loc>/docs/use_cases/case5/</loc>
   </url><url>
-    <loc>http://example.org/docs/user_guide/get_started/</loc>
+    <loc>/docs/user_guide/get_started/</loc>
   </url><url>
-    <loc>http://example.org/docs/introduction/</loc>
+    <loc>/docs/introduction/</loc>
   </url><url>
-    <loc>http://example.org/docs/use_cases/case6/</loc>
+    <loc>/docs/use_cases/case6/</loc>
   </url><url>
-    <loc>http://example.org/docs/use_cases/case1/</loc>
+    <loc>/docs/use_cases/case1/</loc>
   </url><url>
-    <loc>http://example.org/docs/use_cases/case4/</loc>
+    <loc>/docs/use_cases/case4/</loc>
   </url><url>
-    <loc>http://example.org/docs/introduction/overall_introduction/</loc>
+    <loc>/docs/introduction/overall_introduction/</loc>
   </url><url>
-    <loc>http://example.org/docs/publication/paper/</loc>
+    <loc>/docs/publication/paper/</loc>
   </url><url>
-    <loc>http://example.org/docs/publication/</loc>
+    <loc>/docs/publication/</loc>
   </url><url>
-    <loc>http://example.org/docs/user_guide/other_usage/</loc>
+    <loc>/docs/user_guide/other_usage/</loc>
   </url><url>
-    <loc>http://example.org/docs/use_cases/case7/</loc>
+    <loc>/docs/use_cases/case7/</loc>
   </url><url>
-    <loc>http://example.org/docs/user_guide/view_description/</loc>
+    <loc>/docs/user_guide/view_description/</loc>
   </url><url>
-    <loc>http://example.org/docs/publication/video/</loc>
+    <loc>/docs/publication/video/</loc>
   </url><url>
-    <loc>http://example.org/docs/use_cases/case8/</loc>
+    <loc>/docs/use_cases/case8/</loc>
   </url><url>
-    <loc>http://example.org/docs/use_cases/case9/</loc>
+    <loc>/docs/use_cases/case9/</loc>
   </url><url>
-    <loc>http://example.org/docs/use_cases/case20/</loc>
+    <loc>/docs/use_cases/case20/</loc>
   </url><url>
-    <loc>http://example.org/docs/user_guide/data_preparation/</loc>
+    <loc>/docs/user_guide/data_preparation/</loc>
   </url><url>
-    <loc>http://example.org/docs/publication/demo/</loc>
+    <loc>/docs/publication/demo/</loc>
   </url><url>
-    <loc>http://example.org/docs/user_guide/</loc>
+    <loc>/docs/user_guide/</loc>
   </url><url>
-    <loc>http://example.org/docs/use_cases/</loc>
+    <loc>/docs/use_cases/</loc>
   </url><url>
-    <loc>http://example.org/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>http://example.org/docs/</loc>
+    <loc>/docs/</loc>
   </url><url>
-    <loc>http://example.org/</loc>
+    <loc>/</loc>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>/tags/</loc>
   </url>
 </urlset>
